@@ -31,3 +31,13 @@ import sys
 import calendar
 from datetime import datetime
 
+user_date = sys.argv
+
+if len(user_date) == 1:
+  print(datetime.today())
+elif len(user_date) == 2:
+  print(datetime(datetime.today().year, int(user_date[1]), 1))
+elif len(user_date) == 3:
+  print(datetime(int(user_date[2]), int(user_date[1]), 1))
+else:
+  print("input should be in format MM YYYY")
