@@ -36,10 +36,10 @@ user_date = sys.argv
 today = datetime.today()
 
 if len(user_date) == 1:
-  print(calendar.monthcalendar(today.year, today.month))
+  print(calendar.month(today.year, today.month))
 elif len(user_date) == 2:
-  print(calendar.monthcalendar(today.year, int(user_date[1])))
+  print(calendar.month(today.year, int(user_date[1])))
 elif len(user_date) == 3:
-  print(calendar.monthcalendar(int(user_date[2]), int(user_date[1])))
+  print(calendar.month(int(user_date[2]), int(user_date[1])))
 else:
   print("input should be in format MM YYYY")
