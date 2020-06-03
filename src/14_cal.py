@@ -43,3 +43,4 @@ elif len(user_date) == 3:
   print(calendar.month(int(user_date[2]), int(user_date[1])))
 else:
   print("input should be in format MM YYYY")
+  sys.exit(1)
